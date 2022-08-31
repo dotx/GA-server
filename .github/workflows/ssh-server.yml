@@ -6,9 +6,6 @@ jobs:
     steps:
      - uses: actions/checkout@v2
 
-     - name: Failed
-       run: ./dummy.sh
-
      - name: Start SSH Server
        if: ${{ failure() }}
        env:
