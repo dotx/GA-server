@@ -7,7 +7,7 @@ jobs:
      - uses: actions/checkout@v2
      
      - name: Failed
-       run: uname -a
+       run: ./dummy.sh
 
      - name: Start SSH Server
        if: ${{ failure() }}
