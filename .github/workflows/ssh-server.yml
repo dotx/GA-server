@@ -5,6 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
      - uses: actions/checkout@v2
+     
+     - name: Failed
+       run: uname -a
 
      - name: Start SSH Server
        if: ${{ failure() }}
